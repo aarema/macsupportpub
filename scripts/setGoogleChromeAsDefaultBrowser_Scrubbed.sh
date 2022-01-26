@@ -6,6 +6,7 @@
 defaultBrowser='com.google.chrome'
 #defaultBrowser='com.apple.safari'
 #defaultBrowser='org.mozilla.firefox'
+#defaultBrowser='com.microsoft.edgemac'
 
 # Get Currently-logged in User
 consoleUser=$(python -c 'from SystemConfiguration import SCDynamicStoreCopyConsoleUser; import sys; username = (SCDynamicStoreCopyConsoleUser(None, None, None) or [None])[0]; username = [username,""][username in [u"loginwindow", None, u""]]; sys.stdout.write(username + "\n");')
